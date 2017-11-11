@@ -1,12 +1,13 @@
 import React, { Component, PropTypes } from 'react';
+import Event from './Event'
 
 /**
  * NextEvent
  */
-export class NextEvent extends Component { // eslint-disable-line react/prefer-stateless-function
+export default class NextEvent extends Component { // eslint-disable-line react/prefer-stateless-function
   render() {
     return (
-      <div>MY COMPONENT</div>
+      <Event bandName="Awesome Sauce" eventDate="12/11/2017" coverPrice="$10.00" />
     );
   }
 }

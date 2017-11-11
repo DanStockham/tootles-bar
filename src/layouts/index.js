@@ -4,6 +4,8 @@ import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
 
 import Navigation from '../components/Navigation'
+import SocialMedia from '../components/SocialMedia'
+import NextEvent from '../components/NextEvent'
 import mockData from '../api/mockEventData'
 
 import 'bootstrap/dist/css/bootstrap.css';
@@ -60,6 +62,8 @@ const TemplateWrapper = ({ children }) => (
       }}
     >
       {children()}
+    <SocialMedia />
+    <NextEvent />
     </div>
   </div>
 )

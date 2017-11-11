@@ -5,16 +5,17 @@ import { Media } from 'reactstrap'
 
 const Event = (props) => {
   return (
-    <div>
+    <div className="events__eventcard">
       <Media>
           <Media left href="#">
-            <Media object data-src="holder.js/64x64" alt="Generic placeholder image" />
+            <Media object style={ { paddingRight: 10 } } data-src="holder.js/64x64" alt="event image" />
           </Media>
           <Media body>
-            <Media heading>
+            <Media heading style={ { margin: 0 } }>
               {props.bandName}
             </Media>
-              <p>Cover price: ${props.coverPrice}</p>
+              <span style={{display: 'block'}}>Date: {props.eventDate}</span>
+              <span style={{display: 'block'}}>Cover price: ${props.coverPrice}</span>
           </Media>
         </Media>
       </div>

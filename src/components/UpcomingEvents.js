@@ -4,6 +4,7 @@ import Pagination from './Pagination'
 import Event from './Event'
 import mockData from '../api/mockEventData'
 
+
 /**
  * UpcomingEvents
  */
