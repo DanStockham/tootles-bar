@@ -1,10 +1,69 @@
+@import "variables";
+
+.c-background-image {
+  position: fixed;
+  background: url('../img/tootlesbg.jpg');
+  background-position: center;
+  background-size: cover;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  filter: blur(4px);
+}
+
+.c-background-overlay {
+  position: fixed;
+  background: $color-primary-4;
+  height: 100vh;
+  width: 100vw;
+  opacity: .8;
+  z-index: 2;
+}
+
+.c-layout {
+  position: absolute;
+  z-index: 9999;
+  left: 0;
+  right: 0;
+}
+
 .header {
-  background: rebeccapurple;
   margin-bottom: 1.45rem;
   .header__logo {
     text-align: center;
   }
   .header__nav__nav-item {
     text-align: center;
+  }
+}
+
+.c-navigation {
+  background: black;
+  &__collaspe {
+    color: $color-complement-0;
+  }
+  &__text-center {
+    text-align: center;
+  }
+  &__navlink {
+    margin: 12px 0 12px 0;
+    a {
+      color: $color-complement-2;
+    }
+
+  }
+}
+
+.content-box {
+  color: #FFF;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background: #000;
+  opacity: .4;
+  h2 {
+    background: $color-primary-2;
   }
 }
