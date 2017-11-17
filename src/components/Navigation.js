@@ -25,7 +25,7 @@ export default class Navigation extends Component { // eslint-disable-line react
   render() {
     return (
       <div>
-        <Navbar className="c-navigation" color="faded" light>
+        <Navbar className="c-navigation navbar-dark bg-black" style={ {background: "black"} }>
           <NavbarToggler className="mx-auto c-navigation__collaspe" onClick={this.toggle}><FontAwesome name="bars"/>Navigation</NavbarToggler>
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="mr-auto c-navigation__text-center" navbar fill>

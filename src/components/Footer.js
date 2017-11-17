@@ -6,9 +6,9 @@ import React, { Component } from 'react';
 export class Footer extends Component { // eslint-disable-line react/prefer-stateless-function
   render() {
     return (
-      <div>
+      <footer>
         &copy;2017 Tootle's Pumpkin Inn
-      </div>
+      </footer>
     );
   }
 }

@@ -6,7 +6,7 @@ import React, { Component, PropTypes } from 'react';
 export default class AddressBlock extends Component { // eslint-disable-line react/prefer-stateless-function
   render() {
     return (
-      <div>
+      <div className="content-box">
         <div>
           <p>117 E Main St</p>
           <p>Circleville, OH 43113</p>

@@ -1,5 +1,13 @@
 @import "variables";
 
+footer {
+  color: #FFF;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background: $rgba-primary-opacity;
+}
+
 .c-background-image {
   position: fixed;
   background: url('../img/tootlesbg.jpg');
@@ -40,19 +48,15 @@
 }
 
 .c-navigation {
-  background: black;
-  &__collaspe {
-    color: $color-complement-0;
-  }
+  // background: black;
   &__text-center {
     text-align: center;
   }
   &__navlink {
     margin: 12px 0 12px 0;
     a {
-      color: $color-complement-2;
+      color: #FFF;
     }
-
   }
 }
 
@@ -60,10 +64,10 @@
   color: #FFF;
   width: 100%;
   padding: 0;
-  margin: 0;
-  background: #000;
-  opacity: .4;
-  h2 {
+  margin: 0 auto;
+  background: $rgba-primary-opacity;
+  h3 {
+    padding: 10px;
     background: $color-primary-2;
   }
 }

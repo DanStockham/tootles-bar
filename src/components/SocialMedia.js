@@ -7,7 +7,7 @@ import FontAwesome from 'react-fontawesome'
 export default class SocialMedia extends Component { // eslint-disable-line react/prefer-stateless-function
   render() {
     return (
-      <div>
+      <div className="content-box">
         <ul>
           <li><FontAwesome name="facebook" /></li>
           <li><FontAwesome name="instagram" /></li>

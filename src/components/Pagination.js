@@ -6,7 +6,9 @@ import React, { Component, PropTypes } from 'react';
 export default class Pagination extends Component { // eslint-disable-line react/prefer-stateless-function
   render() {
     return (
-      <div>MY COMPONENT</div>
+      <div className="pagination">
+        MY COMPONENT
+      </div>
     );
   }
 }

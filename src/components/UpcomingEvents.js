@@ -25,10 +25,12 @@ export default class UpcomingEvents extends Component { // eslint-disable-line r
     });
 
     return (
-      <div className="c-eventsList">
-        <h2>UPCOMING EVENTS</h2>
-        <Pagination />
-        { events }
+      <div className="content-box">
+        <div className="c-eventsList">
+          <h3>UPCOMING EVENTS</h3>
+          <Pagination />
+          { events }
+        </div>
       </div>
     );
   }

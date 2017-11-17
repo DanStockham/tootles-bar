@@ -7,7 +7,9 @@ import Event from './Event'
 export default class NextEvent extends Component { // eslint-disable-line react/prefer-stateless-function
   render() {
     return (
-      <Event bandName="Awesome Sauce" eventDate="12/11/2017" coverPrice="$10.00" />
+      <div className="content-box">
+        <Event bandName="Awesome Sauce" eventDate="12/11/2017" coverPrice="$10.00" />
+      </div>
     );
   }
 }
