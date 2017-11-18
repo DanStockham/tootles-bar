@@ -7,6 +7,7 @@ export default class AddressBlock extends Component { // eslint-disable-line rea
   render() {
     return (
       <div className="content-box">
+        <h3>Tootle's Pumpkin Inn</h3>
         <div>
           <p>117 E Main St</p>
           <p>Circleville, OH 43113</p>

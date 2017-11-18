@@ -8,7 +8,7 @@ const Event = (props) => {
     <div className="events__eventcard">
       <Media>
           <Media left href="#">
-            <Media object style={ { paddingRight: 10 } } data-src="holder.js/64x64" alt="event image" />
+            <Media object style={ { paddingRight: 10 } } src="http://via.placeholder.com/64x64" alt="event image" />
           </Media>
           <Media body>
             <Media heading style={ { margin: 0 } }>

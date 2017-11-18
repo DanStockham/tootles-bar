@@ -1,9 +1,14 @@
 .pagination {
   width: 90vw;
   font-size: 1.4em;
-  width: 80%;
   margin: 0 auto;
-  border-top: 2px solid #FFF;
+  border: 1px solid #FFF;
+  border-left: 0;
+  border-right: 0;
+  border-radius: 0;
+  span {
+    margin: 0 auto;
+  }
 }
 
 .c-eventsList {
@@ -17,5 +22,12 @@
     padding: 20px 0 20px 0;
     width: 90vw;
     align-self: center;
+    border-bottom: 1px solid #FFF;
+    .media-heading {
+      color: $color-complement-1;
+    }
+  }
+  .events__eventcard:nth-last-child(1) {
+    border-bottom: none;
   }
 }

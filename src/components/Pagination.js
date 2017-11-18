@@ -7,7 +7,7 @@ export default class Pagination extends Component { // eslint-disable-line react
   render() {
     return (
       <div className="pagination">
-        MY COMPONENT
+        <span>1-10 of 10</span>
       </div>
     );
   }
