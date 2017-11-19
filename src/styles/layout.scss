@@ -49,8 +49,10 @@ footer {
     flex-flow: wrap;
     justify-content: center;
     width: 100%;
+
   }
   .c-layout__main {
+    margin-right: 30px;
   }
   .c-layout__aside {
   }
@@ -59,13 +61,16 @@ footer {
 @media (max-width: 760px) {
   .c-layout {
     font-size: 1rem;
+    .c-layout__main {
+      width: 100%;
+      margin-right: 0;
+    }
+    .c-layout__aside {
+      width: 100%;
+    }
   }
-  .c-layout__main {
-    width: 100%;
-  }
-  .c-layout__aside {
-    width: 100%;
-  }
+
+
 }
 
 .header {
