@@ -1,5 +1,5 @@
 .pagination {
-  width: 90vw;
+  width: 100%;
   font-size: 1.4em;
   margin: 0 auto;
   border: 1px solid #FFF;
@@ -16,11 +16,11 @@
   flex-direction: column;
   justify-content: center;
   font-size: .8em;
-  width: 100vw;
+  width: 100%;
   margin: auto 0;
   .events__eventcard {
     padding: 20px 0 20px 0;
-    width: 90vw;
+    width: 100%;
     align-self: center;
     border-bottom: 1px solid #FFF;
     .media-heading {

@@ -24,8 +24,8 @@ footer {
 .c-background-overlay {
   position: fixed;
   background: $color-primary-4;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   opacity: .8;
   z-index: 2;
 }
@@ -35,6 +35,27 @@ footer {
   z-index: 9999;
   left: 0;
   right: 0;
+  font-size: .8rem;
+  .c-layout__content {
+    width: 100%;
+  }
+  .c-layout__main {
+    display: inline-block;
+    width: 100%;
+  }
+  .c-layout__aside {
+    display: inline-block;
+    width: 100%;
+  }
+}
+
+@media (max-width: 760px) {
+  .c-layout {
+    font-size: 1rem;
+  }
+  .c-layout__main {
+    width: 60%;
+  }
 }
 
 .header {

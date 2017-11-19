@@ -58,13 +58,17 @@ const TemplateWrapper = ({ children }) => (
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
       </Helmet>
       <Header />
-      <div>
-        {children()}
-        <SocialMedia />
-        <NextEvent />
-        <AddressBlock/>
-        <Footer/>
+      <div className="c-layout__content">
+        <div className="c-layout__main">
+          {children()}
+        </div>
+        <div className="c-layout__aside">
+          <SocialMedia />
+          <NextEvent />
+          <AddressBlock/>
+        </div>
       </div>
+      <Footer/>
     </div>
   </div>
 )
