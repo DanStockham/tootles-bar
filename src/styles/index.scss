@@ -3,6 +3,7 @@
 @import "eventList";
 @import "social-media";
 @import "next-event";
+@import "address";
 
 html {
   font-family: sans-serif;
@@ -12,7 +13,7 @@ html {
 }
 
 *, *:before, *:after {
-  box-sizing: inherit; 
+  box-sizing: inherit;
 }
 
 body {

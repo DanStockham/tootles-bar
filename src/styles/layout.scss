@@ -51,9 +51,17 @@ footer {
     width: 100%;
 
   }
+  .c-layout__main,
+  .c-layout__aside {
+    h3 {
+      font-size: 1em;
+    }
+  }
+
   .c-layout__main {
     margin-right: 30px;
   }
+
   .c-layout__aside {
   }
 }
@@ -61,16 +69,23 @@ footer {
 @media (max-width: 760px) {
   .c-layout {
     font-size: 1rem;
+    .c-layout__main,
+    .c-layout__aside {
+      h3 {
+        font-size: inherit;
+      }
+    }
     .c-layout__main {
       width: 100%;
       margin-right: 0;
+      h3 {
+        font-size: inherit;
+      }
     }
     .c-layout__aside {
       width: 100%;
     }
   }
-
-
 }
 
 .header {
@@ -84,12 +99,11 @@ footer {
 }
 
 .c-navigation {
-  // background: black;
   &__text-center {
     text-align: center;
   }
   &__navlink {
-    margin: 12px 0 12px 0;
+    margin: 12px 24px 12px 0;
     a {
       color: #FFF;
     }
@@ -104,6 +118,11 @@ footer {
   background: $rgba-primary-opacity;
   h3 {
     padding: 10px;
+    margin-bottom: 10px;
     background: $color-primary-2;
   }
+}
+
+.content-padding {
+  padding: 0 20px 20px 20px;
 }

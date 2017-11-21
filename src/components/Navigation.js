@@ -25,15 +25,18 @@ export default class Navigation extends Component { // eslint-disable-line react
   render() {
     return (
       <div>
-        <Navbar className="c-navigation navbar-dark bg-black" style={ {background: "black"} }>
+        <Navbar className="c-navigation navbar-dark bg-black navbar-expand-md" style={ {background: "black"} } expand>
           <NavbarToggler className="mx-auto c-navigation__collaspe" onClick={this.toggle}><FontAwesome name="bars"/>Navigation</NavbarToggler>
           <Collapse isOpen={this.state.isOpen} navbar>
-            <Nav className="mr-auto c-navigation__text-center" navbar fill>
+            <Nav className="mx-auto c-navigation__text-center" navbar fill>
               <NavItem className="c-navigation__navlink">
                 <Link to="/">Home</Link>
               </NavItem>
               <NavItem className="c-navigation__navlink">
-                <Link to="/page-2">Page 2</Link>
+                <Link to="/">Contact</Link>
+              </NavItem>
+              <NavItem className="c-navigation__navlink">
+                <Link to="/">Gallery</Link>
               </NavItem>
             </Nav>
           </Collapse>

@@ -1,7 +1,24 @@
 .c-upcoming-event {
+  img {
+    margin: 0 auto;
+
+  }
+  h3 {
+    margin-bottom: 0 !important;
+
+  }
+  span {
+    display: block;
+  }
   &__headline {
     font-size: 2em;
     font-weight: normal;
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(0,0,0,0) !important;
+    padding-left: 0 !important;
+  }
+  &__image-container {
+    display: flex;
+    background: #000;
+    width: 100%;
   }
 }

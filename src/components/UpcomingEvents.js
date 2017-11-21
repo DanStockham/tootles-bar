@@ -30,6 +30,7 @@ export default class UpcomingEvents extends Component { // eslint-disable-line r
         <div className="c-eventsList">
           <Pagination />
           { events }
+          <Pagination />
         </div>
       </div>
     );
