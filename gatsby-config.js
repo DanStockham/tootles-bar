@@ -3,7 +3,7 @@ require('dotenv').config();
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
+    title: `Tootle's Pumpkin Inn`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

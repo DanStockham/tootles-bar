@@ -52,7 +52,7 @@ const TemplateWrapper = ({ children }) => (
       <Header />
       <div className="c-layout">
         <Helmet
-          title="Gatsby Default Starter"
+          title="Tootle's Pumpkin Inn"
           meta={[
             { name: 'description', content: 'Sample' },
             { name: 'keywords', content: 'sample, something' },
