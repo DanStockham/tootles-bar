@@ -3,6 +3,8 @@ import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
 
+import lobsterFont from "typeface-lobster"
+
 import Navigation from '../components/Navigation'
 import SocialMedia from '../components/SocialMedia'
 import NextEvent from '../components/NextEvent'
@@ -14,7 +16,6 @@ import 'bootstrap/dist/css/bootstrap.css';
 import '../styles/index.scss'
 import '../styles/layout.scss'
 
-console.log(mockData);
 
 const Header = () => (
   <div
