@@ -27,8 +27,28 @@
     .media-heading {
       color: $color-complement-1;
     }
+    .media-object {
+      max-width: 100%;
+    }
+    .media-left {
+      max-width: 50%;
+    }
+    .media-heading, .media-body {
+      font-size: 1.3em;
+    }
   }
   .events__eventcard:nth-last-child(2) {
     border-bottom: none;
+  }
+}
+
+@media (max-width: 760px) {
+  .c-eventsList {
+    .events__eventcard {
+      .media-heading, .media-body {
+        font-size: 1em;
+      }
+    }
+
   }
 }

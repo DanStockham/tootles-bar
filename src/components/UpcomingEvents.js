@@ -15,22 +15,30 @@ export default class UpcomingEvents extends Component { // eslint-disable-line r
     }
   }
 
-  onPaginate() {
-
-  }
-
   render() {
-    const events = mockData.map((event) => {
-      return <Event key={event.id} bandName={event.bandName} eventDate={event.eventDate} coverPrice={event.coverPrice} />
+    const { group, index, first, last, pageCount } = this.props.pathContext;
+    const paginateControls = { index, first, last, pageCount};
+
+    console.log(index, first, last, pageCount)
+
+    const events = group.map((node) => {
+      const show = node.node;
+      console.log(show.image)
+      return <Event key={show.id} 
+                    showName={show.name} 
+                    showDate={show.date} 
+                    coverPrice={show.coverPrice}
+                    image={show.image ? show.image.file.url : null}
+                    slug={show.slug} />
     });
 
     return (
       <div className="content-box">
-        <h3>UPCOMING EVENTS</h3>
+        <h3 className="content-box__header-tab">UPCOMING EVENTS</h3>
         <div className="c-eventsList">
-          <Pagination />
+          <Pagination paginateControls={paginateControls}/>
           { events }
-          <Pagination />
+          <Pagination paginateControls={paginateControls}/>
         </div>
       </div>
     );

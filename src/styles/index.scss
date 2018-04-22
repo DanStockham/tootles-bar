@@ -4,9 +4,10 @@
 @import "social-media";
 @import "next-event";
 @import "address";
+@import "eventDetail";
 
 html {
-  font-family: "Kirkham" , sans-serif;
+  font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   box-sizing: border-box;
@@ -211,7 +212,6 @@ html {
 }
 body {
   color: hsla(0, 0%, 0%, 0.8);
-  font-family: georgia, serif;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;

@@ -8,7 +8,7 @@ export default class NextEvent extends Component { // eslint-disable-line react/
   render() {
     return (
       <div className="content-box c-upcoming-event">
-        <h3>Upcoming Event</h3>
+        <h3 className="content-box__header-tab">Upcoming Event</h3>
         <div className="c-upcoming-event__image-container">
           <img src="http://via.placeholder.com/350x150" alt="upcoming event"/>
         </div>
