@@ -44,43 +44,70 @@ const Header = () => (
   </div>
 )
 
-const TemplateWrapper = ({ children }) => (
-  <div>
-    <div className="c-background-image"></div>
-    <div className="c-background-overlay"></div>
-    <div className="wrapper">
-      <Header />
-      <div className="c-layout">
-        <Helmet
-          title="Tootle's Pumpkin Inn"
-          meta={[
-            { name: 'description', content: 'Sample' },
-            { name: 'keywords', content: 'sample, something' },
-          ]}
-          >
-          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
-        </Helmet>
+const TemplateWrapper = ({data, children}) => {
+  const nextShow = data.allContentfulShow.edges[0];
+  return (
+    <div>
+      <div className="c-background-image"></div>
+      <div className="c-background-overlay"></div>
+      <div className="wrapper">
+        <Header />
+        <div className="c-layout">
+          <Helmet
+            title="Tootle's Pumpkin Inn"
+            meta={[
+              { name: 'description', content: 'Sample' },
+              { name: 'keywords', content: 'sample, something' },
+            ]}
+            >
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+          </Helmet>
 
-        <div className="c-layout__content">
-          <div className="c-layout__main">
-            {children()}
+          <div className="c-layout__content">
+            <div className="c-layout__main">
+              {children()}
+            </div>
+            <div className="c-layout__aside">
+              <SocialMedia />
+              <NextEvent nextShow={nextShow}/>
+              <AddressBlock/>
+            </div>
           </div>
-          <div className="c-layout__aside">
-            <SocialMedia />
-            <NextEvent />
-            <AddressBlock/>
-          </div>
+          <Footer/>
         </div>
-        <Footer/>
       </div>
     </div>
-  </div>
-)
+  )
+}
 
 TemplateWrapper.propTypes = {
   children: PropTypes.func,
 }
 
 export default TemplateWrapper
+
+
+export const nextEventQuery = graphql`
+  query nextEventQuery {
+    allContentfulShow (
+      limit: 1
+      sort: { fields: [date], order:DESC }
+    ) {
+      edges {
+        node {
+          name
+          date
+          slug
+          coverPrice
+          image {
+          file {
+            url
+          }
+          }
+        }
+      }
+    }
+  }
+`
 
 

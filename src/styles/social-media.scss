@@ -18,4 +18,8 @@
     background: black;
     border-radius: 10px;
   }
+  .social-media__icons--links:active, .social-media__icons--links:hover, .social-media__icons--links  {
+    color: #fff;
+    text-decoration: none;
+  }
 }

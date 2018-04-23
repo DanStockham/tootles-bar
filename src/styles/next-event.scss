@@ -15,10 +15,11 @@
     font-weight: normal;
     background-color: rgba(0,0,0,0) !important;
     padding-left: 0 !important;
+    padding-top: 20px;
   }
   &__image-container {
     display: flex;
     background: #000;
-    width: 100%;
+    // width: 100%;
   }
 }

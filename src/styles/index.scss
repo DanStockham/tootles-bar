@@ -5,6 +5,7 @@
 @import "next-event";
 @import "address";
 @import "eventDetail";
+@import "pagination";
 
 html {
   font-family: sans-serif;
@@ -53,11 +54,14 @@ template {
 }
 a {
   background-color: transparent;
+  color: $color-complement-0;
+  text-decoration: none;
   -webkit-text-decoration-skip: objects;
 }
 a:active,
 a:hover {
   outline-width: 0;
+  color: $color-complement-1;
 }
 abbr[title] {
   border-bottom: none;

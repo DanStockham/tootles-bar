@@ -9,21 +9,13 @@ import mockData from '../api/mockEventData'
  * UpcomingEvents
  */
 export default class UpcomingEvents extends Component { // eslint-disable-line react/prefer-stateless-function
-  constructor(props) {
-    super(props);
-    this.state = {
-    }
-  }
-
   render() {
-    const { group, index, first, last, pageCount } = this.props.pathContext;
-    const paginateControls = { index, first, last, pageCount};
-
-    console.log(index, first, last, pageCount)
+    const { group, index, first, last, pageCount, additionalContext } = this.props.pathContext;
+    const showCount = additionalContext.showCount;
+    const paginateControls = { index, first, last, showCount, pageCount};
 
     const events = group.map((node) => {
       const show = node.node;
-      console.log(show.image)
       return <Event key={show.id} 
                     showName={show.name} 
                     showDate={show.date} 

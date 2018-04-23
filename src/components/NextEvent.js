@@ -1,23 +1,29 @@
 import React, { Component, PropTypes } from 'react';
-import Event from './Event'
+import Link from 'gatsby-link';
 
 /**
  * NextEvent
  */
-export default class NextEvent extends Component { // eslint-disable-line react/prefer-stateless-function
-  render() {
+export const NextEvent = (props) => { // eslint-disable-line react/prefer-stateless-function
+    const {name, date, slug, coverPrice, image} = props.nextShow.node;
+    console.log(image)
+    const convertDate = new Date(date);
+
     return (
       <div className="content-box c-upcoming-event">
         <h3 className="content-box__header-tab">Upcoming Event</h3>
         <div className="c-upcoming-event__image-container">
-          <img src="http://via.placeholder.com/350x150" alt="upcoming event"/>
+          <Link to={`${slug}`} >
+            <img src={image ? image.file.url : 'http://via.placeholder.com/350x150'} alt="upcoming event"/>
+          </Link>
         </div>
         <div className="content-padding">
-          <h3 className="c-upcoming-event__headline">Awesome Sauce</h3>
-          <span>Date: 12/31/17</span>
-          <span>Cover Price: $10.00</span>
+          <h3 className="c-upcoming-event__headline"><strong>{name}</strong></h3>
+          <span>{convertDate.toLocaleDateString('en-us', {weekday: 'short', month: 'short', day: 'numeric'})}</span>
+          <span>{`$${coverPrice.toFixed(2)}`}</span>
         </div>
       </div>
     );
   }
-}
+
+export default NextEvent
