@@ -5,7 +5,6 @@ import UpcomingEvents from '../components/UpcomingEvents'
  * UpcomingEvents page
  */
 const IndexPage = ({pathContext}) => { // eslint-disable-line react/prefer-stateless-function
-  console.log(pathContext)
 
   return (
     <div>

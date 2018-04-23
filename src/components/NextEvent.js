@@ -6,7 +6,6 @@ import Link from 'gatsby-link';
  */
 export const NextEvent = (props) => { // eslint-disable-line react/prefer-stateless-function
     const {name, date, slug, coverPrice, image} = props.nextShow.node;
-    console.log(image)
     const convertDate = new Date(date);
 
     return (
