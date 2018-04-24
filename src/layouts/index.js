@@ -48,9 +48,6 @@ const TemplateWrapper = ({data, children}) => {
   const nextShow = data.allContentfulShow.edges[0];
   return (
     <div>
-      <Helmet>
-        <link rel="stylesheet" href="./styles.css"/>
-      </Helmet>
       <div className="c-background-image"></div>
       <div className="c-background-overlay"></div>
       <div className="wrapper">
