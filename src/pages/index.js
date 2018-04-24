@@ -8,7 +8,7 @@ import '../styles/layout.scss';
 /**
  * UpcomingEvents page
  */
-const IndexPage = ({pathContext}) => { // eslint-disable-line react/prefer-stateless-function
+const IndexPage = () => { // eslint-disable-line react/prefer-stateless-function
 
   return (
     <div />
