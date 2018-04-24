@@ -49,7 +49,7 @@ const TemplateWrapper = ({data, children}) => {
   return (
     <div>
       <Helmet>
-        <link rel="stylesheet" href="styles.css"/>
+        <link rel="stylesheet" href="./styles.css"/>
       </Helmet>
       <div className="c-background-image"></div>
       <div className="c-background-overlay"></div>
