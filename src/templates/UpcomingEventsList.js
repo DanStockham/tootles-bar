@@ -1,5 +1,11 @@
 import React, { Component, PropTypes } from 'react';
-import UpcomingEvents from '../components/UpcomingEvents'
+import UpcomingEvents from '../components/UpcomingEvents';
+import Helmet from 'react-helmet';
+
+
+import 'bootstrap/dist/css/bootstrap.css';
+import '../styles/index.scss';
+import '../styles/layout.scss';
 
 /**
  * UpcomingEvents page
