@@ -12,9 +12,9 @@ import AddressBlock from '../components/AddressBlock'
 import Footer from '../components/Footer'
 import mockData from '../api/mockEventData'
 
-// import 'bootstrap/dist/css/bootstrap.css';
-// import '../styles/index.scss'
-// import '../styles/layout.scss'
+import 'bootstrap/dist/css/bootstrap.css';
+import '../styles/index.scss'
+import '../styles/layout.scss'
 
 
 const Header = () => (
@@ -53,12 +53,12 @@ const TemplateWrapper = ({ children }) => (
       <div className="c-layout">
         <Helmet
           title="Tootle's Pumpkin Inn"
-          meta={[
-            { name: 'description', content: 'Sample' },
-            { name: 'keywords', content: 'sample, something' },
-          ]}
-          >
-          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+          // meta={[
+          //   { name: 'description', content: 'Sample' },
+          //   { name: 'keywords', content: 'sample, something' },
+          // ]}
+          // >
+          // <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
         </Helmet>
 
         <div className="c-layout__content">
