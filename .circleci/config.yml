@@ -24,16 +24,13 @@ jobs:
         key: dependency-cache-{{ checksum 'package.json'}}
         key: v1-dependencies-
       - run: 
-        - name: Install Gatsby globally
-        - command: npm install gatsby -g
-      - run: 
           name: Install dependencies
           command: npm install
       # Download and cache dependencies
       - save_cache:
         paths:
         - node_modules
-          key: va1-dependencies-{{ checksum "package.json" }}
+        key: va1-dependencies-{{ checksum "package.json" }}
 
       - run: 
         name: test
