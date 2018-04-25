@@ -23,11 +23,9 @@ jobs:
       - restore_cache:
         key: dependency-cache-{{ checksum 'package.json'}}
         key: v1-dependencies-
-
       - run: 
         - name: Install Gatsby globally
         - command: npm install gatsby -g
-
       - run: 
           name: Install dependencies
           command: npm install
