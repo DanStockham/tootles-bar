@@ -12,7 +12,7 @@ export const NextEvent = (props) => { // eslint-disable-line react/prefer-statel
       <div className="content-box c-upcoming-event">
         <h3 className="content-box__header-tab">Upcoming Event</h3>
         <div className="c-upcoming-event__image-container">
-          <Link to={`${slug}`} >
+          <Link to={`/${slug}`} >
             <img src={image ? image.file.url : 'http://via.placeholder.com/350x150'} alt="upcoming event"/>
           </Link>
         </div>
