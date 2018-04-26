@@ -8,7 +8,7 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-glamor`,
     `gatsby-transformer-remark`,
-    'gatsby-plugin-sass',
+    // 'gatsby-plugin-sass',
     {
       resolve: `gatsby-source-contentful`,
       options: {
