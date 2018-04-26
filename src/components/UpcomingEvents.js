@@ -2,12 +2,7 @@ import React, { Component, PropTypes } from 'react';
 import Link from 'gatsby-link'
 import Pagination from './Pagination'
 import Event from './Event'
-import mockData from '../api/mockEventData'
 
-
-/**
- * UpcomingEvents
- */
 export default class UpcomingEvents extends Component { // eslint-disable-line react/prefer-stateless-function
   render() {
     const { group, index, first, last, pageCount, additionalContext } = this.props.pathContext;
