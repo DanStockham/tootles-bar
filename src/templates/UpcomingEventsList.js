@@ -5,7 +5,6 @@ import Helmet from 'react-helmet';
 
 import 'bootstrap/dist/css/bootstrap.css';
 import '../styles/index.scss';
-import '../styles/layout.scss';
 
 /**
  * UpcomingEvents/Index page
