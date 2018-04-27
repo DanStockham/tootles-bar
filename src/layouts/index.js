@@ -12,6 +12,8 @@ import AddressBlock from '../components/AddressBlock'
 import Footer from '../components/Footer'
 import mockData from '../api/mockEventData'
 
+import 'bootstrap/dist/css/bootstrap.css';
+import '../styles/index.scss';
 
 const Header = () => (
   <div
