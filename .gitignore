@@ -3,6 +3,7 @@
 node_modules
 .cache/
 .sass-cache/
+styles/styles.min.css
 # Build directory
 public/
 .DS_Store
