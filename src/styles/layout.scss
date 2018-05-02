@@ -65,6 +65,13 @@ footer {
 }
 
 @media (max-width: 760px) {
+  
+  .c-background-image {
+    background-image: none;
+  }
+  .c-background-overlay {
+    opacity: 1;
+  }
   .c-layout {
     font-size: 1rem;
     .c-layout__main,

@@ -7,7 +7,7 @@ footer {
 
 .c-background-image {
   position: fixed;
-  background: url("../img/tootlesBgrustic.jpg");
+  background: url("../img/tootlesbgrustic.jpg");
   background-position: center;
   background-size: cover;
   z-index: 1;
@@ -51,6 +51,12 @@ footer {
     margin-right: 30px; }
 
 @media (max-width: 760px) {
+  .c-background-image {
+    background-image: none; }
+
+  .c-background-overlay {
+    opacity: 1; }
+
   .c-layout {
     font-size: 1rem; }
     .c-layout .c-layout__main h3,
@@ -205,8 +211,7 @@ footer {
   .event-detail-coverprice {
     color: #787D81; }
   .event-detail-image {
-    max-width: 100%;
-    height: 100%; }
+    max-width: 100%; }
 
 .pagination {
   padding: 10px 0; }

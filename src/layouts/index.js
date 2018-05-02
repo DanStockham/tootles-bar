@@ -14,7 +14,8 @@ import Footer from '../components/Footer'
 import 'bootstrap/dist/css/bootstrap.css';
 // import '../styles/index.scss';
 // import '../styles/layout.scss';
-import '../styles/styles.css';
+import '../styles/styles.min.css';
+
 
 const Header = () => (
   <div
