@@ -12,8 +12,6 @@ import AddressBlock from '../components/AddressBlock'
 import Footer from '../components/Footer'
 
 import 'bootstrap/dist/css/bootstrap.css';
-// import '../styles/index.scss';
-// import '../styles/layout.scss';
 import '../styles/styles.min.css';
 
 
