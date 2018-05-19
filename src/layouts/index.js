@@ -8,7 +8,7 @@ import lobsterFont from "typeface-lobster"
 import Navigation from '../components/Navigation'
 import SocialMedia from '../components/SocialMedia'
 import NextEvent from '../components/NextEvent'
-import AddressBlock from '../components/AddressBlock'
+import AddressBlock from '../templates/AddressBlock'
 import Footer from '../components/Footer'
 
 import 'bootstrap/dist/css/bootstrap.css';

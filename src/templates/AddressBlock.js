@@ -1,12 +1,16 @@
 import React, { Component, PropTypes } from 'react';
 import { Link } from 'gatsby-link'
-import Map from './Map'
+import Map from '../components/Map'
 
 /**
  * AddressBlock
  */
 export default class AddressBlock extends Component { // eslint-disable-line react/prefer-stateless-function
   render() {
+    const data = this.props
+
+    console.log(data)
+
     return (
       <div className="content-box">
         <h3 className="content-box__header-tab">TOOTLE's PUMPKIN INN</h3>
@@ -38,3 +42,19 @@ export default class AddressBlock extends Component { // eslint-disable-line rea
     );
   }
 }
+
+const query = graphql`
+query {
+  allContentfulContact {
+    edges {
+      node {
+        hours {
+          hours
+        }
+        phone
+        email
+      }
+    }
+  }
+}
+`

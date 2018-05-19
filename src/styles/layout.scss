@@ -64,6 +64,18 @@ footer {
   }
 }
 
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 10%;
+  .header__logo {
+    fill: #fff;
+    max-width: 1200px;
+    
+  }
+}
+
 @media (max-width: 760px) {
   
   .c-background-image {
@@ -107,9 +119,6 @@ footer {
 
 .header {
   margin-bottom: 1.45rem;
-  .header__logo {
-    text-align: center;
-  }
   .header__nav__nav-item {
     text-align: center;
   }
