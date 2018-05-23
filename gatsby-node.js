@@ -39,34 +39,6 @@
 //   })
 //  }
 
-// exports.sourceNode = ({ boundActionCreators}) => {
-//   const { createNode } = boundActionCreators
-
-//   createNode({
-//     // Data for the node.
-//     field1: `a string`,
-//     field2: 10,
-//     field3: true,
-  
-//     // Required fields.
-//     id: `a-node-id`,
-//     parent: `the-id-of-the-parent-node`, // or null if it's a source node without a parent
-//     children: [],
-//     internal: {
-//       type: `CoolServiceMarkdownField`,
-//       contentDigest: crypto
-//         .createHash(`md5`)
-//         .update(JSON.stringify(fieldData))
-//         .digest(`hex`),
-//       mediaType: `text/markdown`, // optional
-//       content: JSON.stringify(fieldData), // optional
-//       description: `Cool Service: "Title of entry"`, // optional
-//     }
-//   })
-
-//   return
-// }
-
  exports.createPages = ({ graphql, boundActionCreators }) => {
    const { createPage } = boundActionCreators
    return new Promise((resolve, reject) => {

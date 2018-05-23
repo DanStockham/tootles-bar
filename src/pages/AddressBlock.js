@@ -6,16 +6,8 @@ import Map from '../components/Map'
  * AddressBlock
  */
 export default class AddressBlock extends Component { // eslint-disable-line react/prefer-stateless-function
-  constructor() {
-    super()
-    this.state = {
-      hours: [],
-      
-    }
-  }
-
   render() {
-
+    console.log(this.props)
     return (
       <div className="content-box">
         <h3 className="content-box__header-tab">TOOTLE's PUMPKIN INN</h3>
@@ -39,6 +31,9 @@ export default class AddressBlock extends Component { // eslint-disable-line rea
           <span style={ {display: 'block'} }>Hours:</span>
           <p>Monday-Saturday: 4pm-2:30am</p>
           <p>(614)299-4987</p>
+        </div>
+        <div>
+          <p>Schedule gigs at test@email.com</p>
         </div>
       </div>
 

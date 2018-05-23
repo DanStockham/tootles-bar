@@ -226,6 +226,11 @@ footer {
 .pagination {
   padding: 10px 0; }
 
+.logo {
+  fill: #fff; }
+  .logo svg {
+    width: 20vw; }
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;

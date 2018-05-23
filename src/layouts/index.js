@@ -8,8 +8,9 @@ import lobsterFont from "typeface-lobster"
 import Navigation from '../components/Navigation'
 import SocialMedia from '../components/SocialMedia'
 import NextEvent from '../components/NextEvent'
-import AddressBlock from '../templates/AddressBlock'
+import AddressBlock from '../pages/AddressBlock'
 import Footer from '../components/Footer'
+import Logo from '../components/Logo'
 
 import 'bootstrap/dist/css/bootstrap.css';
 import '../styles/styles.min.css';
@@ -34,7 +35,7 @@ const Header = () => (
             textDecoration: 'none',
           }}
         >
-          Tootle's
+         <Logo/>
         </Link>
       </h1>
     </div>
