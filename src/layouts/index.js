@@ -5,7 +5,7 @@ import Helmet from 'react-helmet'
 
 import lobsterFont from "typeface-lobster"
 
-import Navigation from '../components/Navigation'
+// import Navigation from '../components/Navigation'
 import SocialMedia from '../components/SocialMedia'
 import NextEvent from '../components/NextEvent'
 import AddressBlock from '../pages/AddressBlock'
@@ -39,7 +39,7 @@ const Header = () => (
         </Link>
       </h1>
     </div>
-  <Navigation />
+  {/* <Navigation /> */}
   </div>
 )
 

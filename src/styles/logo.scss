@@ -1,6 +1,12 @@
 .logo {
-    fill: #fff;
+    width: 10vw;
     svg {
-        width: 20vw;
+        fill: #fff;  
+    }
+}
+
+@media( max-width: 500px) {
+    .logo {
+        width: 40vw;
     }
 }
