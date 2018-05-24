@@ -114,8 +114,16 @@ footer {
   padding: 0 20px 20px 20px; }
 
 footer {
-  text-align: center;
+  display: flex !important;
+  justify-content: center;
   padding: 50px 0; }
+  footer .footer-wrapper {
+    max-width: 55vw; }
+  footer .footer-about {
+    font-size: 0.8em; }
+    footer .footer-about .footer-about__headline {
+      font-size: 1.2em;
+      font-weight: bold; }
 
 .pagination {
   width: 100%;

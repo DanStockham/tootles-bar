@@ -154,6 +154,17 @@ footer {
 }
 
 footer {
-  text-align: center;
+  display: flex !important;
+  justify-content: center;
   padding: 50px 0;
+  .footer-wrapper {
+    max-width: 55vw;
+  }
+  .footer-about {
+    font-size: 0.8em;
+    .footer-about__headline {
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+  }
 }
