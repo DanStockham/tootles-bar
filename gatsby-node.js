@@ -30,9 +30,9 @@
                 slug
                 coverPrice
                 image {
-                 file {
-                  url
-                }
+                  file {
+                    url
+                  }
                 }
               }
             }

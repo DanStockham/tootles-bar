@@ -5,6 +5,9 @@ module.exports = {
     title: `Tootle's Pumpkin Inn`,
   },
   plugins: [
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    `gatsby-image`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-glamor`,
     `gatsby-transformer-remark`,

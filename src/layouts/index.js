@@ -44,6 +44,7 @@ const Header = () => (
 
 const TemplateWrapper = ({data, children}) => {
   const nextShow = data.allContentfulShow.edges[0];
+  console.log(data)
   return (
     <div>
       <div className="c-background-image"></div>
@@ -87,26 +88,29 @@ export default TemplateWrapper
 
 
 export const nextEventQuery = graphql`
-  query nextEventQuery {
-    allContentfulShow (
-      limit: 1
-      sort: { fields: [date], order:DESC }
-    ) {
-      edges {
-        node {
-          name
-          date
-          slug
-          coverPrice
-          image {
+query nextEventQuery {
+  allContentfulShow (
+    limit: 1
+    sort: { fields: [date], order:DESC }
+  ) {
+    edges {
+      node {
+        name
+        date
+        slug
+        coverPrice
+        image {
+          resolutions {
+            ...GatsbyContentfulResolutions
+          }
           file {
             url
-          }
           }
         }
       }
     }
   }
+}
 `
 
 

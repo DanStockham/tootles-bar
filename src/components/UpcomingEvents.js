@@ -11,11 +11,12 @@ export default class UpcomingEvents extends Component { // eslint-disable-line r
 
     const events = group.map((node) => {
       const show = node.node;
+      console.log(show)
       return <Event key={show.id} 
                     showName={show.name} 
                     showDate={show.date} 
                     coverPrice={show.coverPrice}
-                    image={show.image ? show.image.file.url : null}
+                    image={show.image ? show.image : null}
                     slug={show.slug} />
     });
 
