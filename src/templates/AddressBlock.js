@@ -32,7 +32,9 @@ export default class AddressBlock extends Component { // eslint-disable-line rea
         </div>
         <div>
           <span style={ {display: 'block'} }>Hours:</span>
-          <p>Monday-Saturday: 4pm-2:30am</p>
+          <p>Monday-Thursday: 5:30pm-12:30am</p>
+          <p>Friday-Saturday: 5:00pm-2:30am</p>
+          <p>Sundays: closed</p>
           <p>(614)299-4987</p>
         </div>
       </div>
