@@ -30,6 +30,10 @@
                 slug
                 coverPrice
                 image {
+                  sizes(maxWidth: 250) {
+                    src
+                    base64
+                  }
                   file {
                     url
                   }

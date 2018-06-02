@@ -10,14 +10,12 @@ const Event = (props) => {
   const date = convertDate.toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' });
   const time = convertDate.toLocaleTimeString('en-US', {hour: '2-digit', minute: '2-digit'})
 
-  console.log(props)
-
   return (
     <div className="events__eventcard">
       <Media>
           <Media left href={props.slug}>
             {/* <Link to={props.slug} > */}
-              <Media object style={ { paddingRight: 10 } } src={props.image ? props.image.file.url : "http://via.placeholder.com/120x100"} alt={`${props.showName}`} />
+              <Media object style={ { paddingRight: 10 } } src={props.image ? props.image.sizes.src : "http://via.placeholder.com/120x100"} alt={`${props.showName}`} />
               {/* <Img resolutions={props.image.sizes} /> */}
             {/* </Link> */}
           </Media>

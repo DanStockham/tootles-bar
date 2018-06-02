@@ -44,7 +44,7 @@ const Header = () => (
 
 const TemplateWrapper = ({data, children}) => {
   const nextShow = data.allContentfulShow.edges[0];
-  console.log(data)
+
   return (
     <div>
       <div className="c-background-image"></div>
