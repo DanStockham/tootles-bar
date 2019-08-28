@@ -7,10 +7,7 @@ import Map from '../components/Map'
  */
 export default class AddressBlock extends Component { // eslint-disable-line react/prefer-stateless-function
   render() {
-    const data = this.props
-
-    console.log(data)
-
+    console.log(this.props)
     return (
       <div className="content-box">
         <h3 className="content-box__header-tab">TOOTLE's PUMPKIN INN</h3>
@@ -35,6 +32,9 @@ export default class AddressBlock extends Component { // eslint-disable-line rea
           <p>Monday-Saturday: 4pm-2:30am</p>
           <p>(614)299-4987</p>
         </div>
+        <div>
+          <p>Schedule gigs at test@email.com</p>
+        </div>
       </div>
 
 
@@ -42,19 +42,3 @@ export default class AddressBlock extends Component { // eslint-disable-line rea
     );
   }
 }
-
-const query = graphql`
-query {
-  allContentfulContact {
-    edges {
-      node {
-        hours {
-          hours
-        }
-        phone
-        email
-      }
-    }
-  }
-}
-`

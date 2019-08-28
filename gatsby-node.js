@@ -7,7 +7,37 @@
  // You can delete this file if you're not using it
 
  const path = require("path");
- const createPaginatedPages = require("gatsby-paginate")
+ const createPaginatedPages = require("gatsby-paginate");
+
+//  exports.createLayouts = ({ graphql, boundActionCreators }) => {
+//   return new Promise((resolve, reject) => {
+//     const addressBlock = path.resolve('src/templates/AddressBlock.js')
+//     resolve(
+//       graphql( 
+//         `
+//         query {
+//           allContentfulContact {
+//             edges {
+//               node {
+//                 hours {
+//                   hours
+//                 }
+//                 phone
+//                 email
+//               }
+//             }
+//           }
+//         }
+//         `
+//       )
+//     ).then(result => {
+//       if(result.errors) {
+//         reject(result.errors)
+//       }
+//       console.log(result)
+//     })
+//   })
+//  }
 
  exports.createPages = ({ graphql, boundActionCreators }) => {
    const { createPage } = boundActionCreators

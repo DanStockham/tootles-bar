@@ -5,6 +5,7 @@ export default class EventDetail extends Component {
   render() {
     const data = this.props.data.contentfulShow;
     const convertDate = new Date(data.date)
+    console.log(this.props)
 
     return (
       <div className="content-box">
